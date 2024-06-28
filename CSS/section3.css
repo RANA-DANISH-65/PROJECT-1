@@ -1,0 +1,31 @@
+/* Add this CSS to your stylesheet (e.g., section3.css) */
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url('/Assets/work/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px; /* Adjust margin to ensure separation from upper content */
+  }
+  
+  .img {
+    text-align: center;
+    color: white; /* Change text color if needed */
+    background: rgba(0, 0, 0, 0.5); /* Add background to improve text visibility */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  
