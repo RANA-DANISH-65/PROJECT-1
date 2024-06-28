@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 .container1 {
     display: flex;
     flex-direction: column;
@@ -35,13 +36,15 @@
          font-style: italic;
 }
 .son2{
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: "Lato", sans-serif;
     font-size: 1.5rem;
+    font-weight: 1000;
     font-style: italic;
 }
 .son3 a{
     background-color: rgb(241, 167, 70);
+    font-family: "Lato", sans-serif;
+    transition: all 0.5s ease-in-out;
     text-decoration: none;
     color: var(--color1);
     font-size: 1.2rem;
@@ -50,6 +53,7 @@
 
 }
 .son3 a:hover{
+    font-size: 1rem;
     font-weight: bolder;
     background-color: var(--color2);
     color: #FFF;
@@ -59,5 +63,21 @@
         width: 85%; 
         height: auto; 
         background-position: center;
+    }
+    .son2{
+        font-size: 1rem;
+    }
+    .son1{
+        font-size: 1rem;
+    }
+    .son3 a{
+        font-size: 0.5rem;
+        padding: 8px;
+    }
+    .son3 a:hover{
+        font-size: 0.5rem;
+        font-weight: bolder;
+        background-color: var(--color2);
+        color: #FFF;
     }
 }
