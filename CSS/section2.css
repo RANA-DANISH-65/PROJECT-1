@@ -4,11 +4,11 @@
     display: flex;
     margin: auto;
     width: 95vw;
-    height: 170vh;
+    height: auto;
 }
 .left{
     width: 35%;
-    height: 95%;
+    height: auto;
     margin:10px 0;
     transition: all 0.5s ease-in-out ;
     background-color: #8ecae6;

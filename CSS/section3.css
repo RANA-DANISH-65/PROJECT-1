@@ -1,31 +1,258 @@
-/* Add this CSS to your stylesheet (e.g., section3.css) */
-
 .container4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 95vw;
+  margin: 110px 10px;
+  height: auto;
+}
+
+.work-content {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url('/ASSETS/work/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  color: rgb(129, 8, 8);
+}
+
+.work-content h2 {
+  font-weight: 700;
+  font-size: 600%;
+}
+
+.work-content p {
+  width: 40%;
+  margin: 20px 0;
+  padding: 40px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 12px;
+  background-color: grey;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  word-spacing: 0.5em;
+}
+
+.work-content p:hover {
+  color: white;
+  background-color: brown;
+}
+
+.content-fluid {
+  margin: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+  font-size: 4rem;
+  gap: 1.5rem;
+  text-decoration: underline;
+}
+
+
+.container {
+  margin: -25px 5px;
+  width: 95vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide-1 {
+  background: url('/ASSETS/work/work8.jpg');
+}
+.slide-2 {
+  background: url('/ASSETS/work/work18.jpg');
+}
+.slide-3 {
+  background: url('/ASSETS/work/work17.jpg');
+}
+.slide-4 {
+  background: url('/ASSETS/work/work14.jpg');
+}
+
+.slide-5 {
+  background: url('/ASSETS/work/work9.jpg');
+}
+
+.slide-6 {
+  background: url('/ASSETS/work/work10.jpg');
+}
+.slide-7 {
+  background: url('/ASSETS/work/work1.jpg');
+}
+.slide-8 {
+  background: url('/ASSETS/work/work2.jpg');
+}
+.slide-9 {
+  background: url('/ASSETS/work/work3.jpg');
+}
+.slide-10 {
+  background: url('/ASSETS/work/work4.jpg');
+}
+
+.slide-11{
+  background: url('/ASSETS/work/work5.jpg');
+}
+
+.slide-12 {
+  background: url('/ASSETS/work/work6.jpg');
+}
+.slide-13 {
+  background: url('/ASSETS/work/work7.jpg');
+}
+
+.slide-14{
+  background: url('/ASSETS/work/work13.jpg');
+}
+
+.slide-15 {
+  background: url('/ASSETS/work/work16.jpg');
+}
+.slide-16{
+  background: url('/ASSETS/work/work11.jpg');
+}
+
+.slide-17 {
+  background: url('/ASSETS/work/work12.jpg');
+}
+.slide-18 {
+  background: url('/ASSETS/work/work15.jpg');
+}
+
+.slide-19{
+  background: url('/ASSETS/work/work19.jpg');
+}
+
+.slide-20 {
+  background: url('/ASSETS/work/work20.jpg');
+}
+
+
+
+.slide {
+  width: 100%;
+  height: 90%;
+  margin: 0 -15px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.slide h1{
+  padding: 23px;
+  position: relative;
+  width: 50%;
+  top: 70px;
+  background-color: grey;
+  border-radius: 12px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.arrow img {
+  width: 50px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, .4);
+}
+
+.l {
+  left: 0;
+}
+
+.r {
+  right: 0;
+}
+
+
+
+@media(max-width: 700px) {
+  .container4 {
     width: 100vw;
-    height: 100vh; /* Adjust the height as needed */
-    background-image: url('/Assets/work/back.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 50px; /* Adjust margin to ensure separation from upper content */
+    margin: 50px 5px;
   }
-  
-  .img {
-    text-align: center;
-    color: white; /* Change text color if needed */
-    background: rgba(0, 0, 0, 0.5); /* Add background to improve text visibility */
+
+  .work-content {
+    width: 95%;
+    height: auto;
     padding: 20px;
-    border-radius: 10px;
   }
-  
-  h2 {
-    margin-bottom: 20px;
+
+  .work-content h2 {
+    font-size: 2rem; /* Adjusted for smaller screens */
   }
-  
-  p {
-    margin-bottom: 0;
+
+  .work-content p {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem; /* Adjust font size for readability */
   }
-  
+
+  .content-fluid {
+    font-size: 2rem;
+    gap: 0.5rem;
+    margin: 10px;
+  }
+
+  .container {
+    width: 100vw;
+    height: auto; /* Set height to auto for responsiveness */
+    margin: 100px 0; /* Adjust margin for a better fit */
+  }
+
+  .slide {
+    height: 30vh; /* Adjust height to fit smaller screens better */
+    margin: 56px 0; /* Ensure margin is consistent */
+    width: 95%;
+    background-size: cover; /* Adjust background size to ensure visibility */
+  }
+
+  .slide h1 {
+    width: 70%; /* Adjust width to fit text within smaller screens */
+    top: 10px;
+    font-size: 0.75rem; /* Reduce font size for smaller screens */
+    padding: 5px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow img {
+    width: 30px;
+  }
+  .l{
+    top: 75px;
+    left: 20px;
+  }
+  .r{
+    top: 75px;
+    right: 20px;
+  }
+}
