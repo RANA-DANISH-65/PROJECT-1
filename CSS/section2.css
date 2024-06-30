@@ -121,7 +121,7 @@
     }
   
     .left {
-      width: 90%;
+     width: 93vw;
       height: auto;
       margin: 10px 0;
       background-color: #8ecae6;
@@ -129,7 +129,7 @@
     }
   
     .right {
-      width: 90%;
+      width: 93vw;
       height: auto;
       margin: 10px 0;
       order: 2; /* Display .right second in the flexbox order */
@@ -167,11 +167,12 @@
     }
   
     .partner img {
-      width: 100%;
+      width: 90%;
       height: auto;
     }
   
     .partner p {
       padding: 10px;
+      width: 90%;
     }
   }

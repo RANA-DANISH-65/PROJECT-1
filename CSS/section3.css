@@ -192,12 +192,12 @@
 
 @media(max-width: 700px) {
   .container4 {
-    width: 100vw;
+    width: 95vw;
     margin: 50px 5px;
   }
 
   .work-content {
-    width: 95%;
+    width: 95vw;
     height: auto;
     padding: 20px;
   }
@@ -207,7 +207,7 @@
   }
 
   .work-content p {
-    width: 90%;
+    width: 96%;
     margin: 10px 0;
     padding: 10px;
     font-size: 1rem; /* Adjust font size for readability */

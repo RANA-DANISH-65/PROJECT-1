@@ -1,6 +1,113 @@
-.container5{
+.container5 {
     width: 95vw;
-    margin: 20px 0;
+    margin: 10px 0;
     height: auto;
-    border: 2px solid black;
 }
+
+.test {
+    font-size: 3rem;
+    text-align: center;
+    color: darkcyan;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.client {
+
+    width: 90%;
+    display: flex;
+}
+
+.dad1 {
+   
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative; 
+}
+
+.dad1 img {
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 20px;
+    transition: filter 0.3s ease; 
+}
+
+.dad1 img:hover {
+    filter: grayscale(100%); 
+}
+
+.dad1 h2 {
+    display: none;
+    position: absolute;
+    font-size: 4rem;
+    color:  #f1faee;
+    background-color:#e63946;
+    padding: 20px;
+    border-radius: 20px;
+    bottom: 50%; 
+    left: 50%;
+    transform: translate(-50%, 50%); 
+}
+
+.dad1 img:hover ~ h2 {
+    display: block; /* Show h2 on hover */
+}
+
+.dad1 p {
+    background-color: grey;
+    margin: 0 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    height: 90%;
+    line-height: 2;
+    width: 90%;
+    padding: 20px;
+    opacity: 1; 
+    transition: opacity 0.3s ease; 
+}
+
+.dad1 img:hover ~ p {
+    opacity: 0; 
+}
+
+
+
+@media (max-width: 700px) {
+    .container5{
+    
+        margin-top: 120px;
+    }
+    .test{
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+    .dad1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .dad1 img {
+        width: 93%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .dad1 h2 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .dad1 p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
+  
+
