@@ -6,21 +6,17 @@
     align-items: center;
     margin: 18px;
     width: 95vw;
-    height: 100vh; /* Adjusted height to full viewport height */
+    height: 100vh; 
     background-image: url(/ASSETS/background.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px; /* Increased padding for spacing */
+    padding: 20px; 
     position: relative;
 
 }
-.child1{
-    position: relative;
-    width: 100%;
-    height: 50%;
-}
-.child2
+
+.child
 {
     color: var(--color1);
     position: relative;

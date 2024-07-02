@@ -54,7 +54,7 @@
 }
 
 .dad1 img:hover ~ h2 {
-    display: block; /* Show h2 on hover */
+    display: block; 
 }
 
 .dad1 p {

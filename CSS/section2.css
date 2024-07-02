@@ -125,14 +125,14 @@
       height: auto;
       margin: 10px 0;
       background-color: #8ecae6;
-      order: 1; /* Display .left first in the flexbox order */
+      order: 1; 
     }
   
     .right {
       width: 93vw;
       height: auto;
       margin: 10px 0;
-      order: 2; /* Display .right second in the flexbox order */
+      order: 2; 
     }
   
     .ex1 h2 {

@@ -203,14 +203,14 @@
   }
 
   .work-content h2 {
-    font-size: 2rem; /* Adjusted for smaller screens */
+    font-size: 2rem; 
   }
 
   .work-content p {
     width: 96%;
     margin: 10px 0;
     padding: 10px;
-    font-size: 1rem; /* Adjust font size for readability */
+    font-size: 1rem; 
   }
 
   .content-fluid {
@@ -221,21 +221,21 @@
 
   .container {
     width: 100vw;
-    height: auto; /* Set height to auto for responsiveness */
-    margin: 100px 0; /* Adjust margin for a better fit */
+    height: auto; 
+    margin: 100px 0; 
   }
 
   .slide {
-    height: 30vh; /* Adjust height to fit smaller screens better */
-    margin: 56px 0; /* Ensure margin is consistent */
+    height: 30vh; 
+    margin: 56px 0; 
     width: 95%;
-    background-size: cover; /* Adjust background size to ensure visibility */
+    background-size: cover; 
   }
 
   .slide h1 {
-    width: 70%; /* Adjust width to fit text within smaller screens */
+    width: 70%; 
     top: 10px;
-    font-size: 0.75rem; /* Reduce font size for smaller screens */
+    font-size: 0.75rem; 
     padding: 5px;
   }
 

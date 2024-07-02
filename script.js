@@ -1,54 +1,60 @@
-let slide = document.querySelectorAll('.slide');
-var current = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".menu li a");
+    const checkBox = document.getElementById("check");
 
-function cls(){
-    for(let i = 0; i < slide.length; i++){
-          slide[i].style.display = 'none';
+    menuItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        checkBox.checked = false; 
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll(".slide"); 
+    let current = 0;
+
+    function cls() {
+      for (let i = 0; i < 20; i++) {
+        slides[i].style.display = "none";
+      }
     }
-}
 
-function next(){
-    cls();
-    if(current === slide.length-1) current = -1;
-    current++;
+    function showSlide(index) {
+      slides[index].style.display = "block";
+      slides[index].style.opacity = 0.4;
 
-    slide[current].style.display = 'block';
-    slide[current].style.opacity = 0.4;
-
-    var x = 0.4;
-    var intX = setInterval(function(){
-        x+=0.1;
-        slide[current].style.opacity = x;
-        if(x >= 1) {
-            clearInterval(intX);
-            x = 0.4;
+      let x = 0.4;
+      let intX = setInterval(function () {
+        x += 0.1;
+        slides[index].style.opacity = x;
+        if (x >= 1) {
+          clearInterval(intX);
+          x = 0.4;
         }
-    }, 100);
+      }, 100);
+    }
 
-}
+    function next() {
+      cls();
+      current = (current + 1) % slides.length;
+      showSlide(current);
+      slides[currentSlide].scrollIntoView({ behavior: "smooth" });
+    }
 
-function prev(){
-    cls();
-    if(current === 0) current = slide.length;
-    current--;
+    function prev() {
+      cls();
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+      slides[currentSlide].scrollIntoView({ behavior: "smooth" });
+    }
 
-    slide[current].style.display = 'block';
-    slide[current].style.opacity = 0.4;
+    function start() {
+      cls();
+      showSlide(current);
+    }
 
-    var x = 0.4;
-    var intX = setInterval(function(){
-        x+=0.1;
-        slide[current].style.opacity = x;
-        if(x >= 1) {
-            clearInterval(intX);
-            x = 0.4;
-        }
-    }, 100);
+    document.querySelector(".arrow.l").addEventListener("click", prev);
+    document.querySelector(".arrow.r").addEventListener("click", next);
 
-}
-
-function start(){
-    cls();
-    slide[current].style.display = 'block';
-}
-start();
+    start();
+  });
